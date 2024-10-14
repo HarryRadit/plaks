@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{book.title}}</title>
+</head>
+<body>
+
+<h1>{{book.title}}</h1>
+<p><strong>Author</strong> {{book.author}}</p>
+<p><strong>Year</strong>{{book.year}}</p>
+<p><strong>Description</strong>{{book.description}}</p>
+
+{% if book.year < 2011 %}
+    <p>This book is old</p>
+{% else %}
+    <p>This book is new</p>
+{% endif %}
+
+<a href="/">back to book list</a>
+</body>
+</html>
